@@ -1,4 +1,4 @@
-package dk.es.br.vies;
+package com.cloudesire.vies_client;
 
 public class ViesVatServiceException extends Exception
 {

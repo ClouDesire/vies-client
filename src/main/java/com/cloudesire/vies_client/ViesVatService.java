@@ -1,4 +1,4 @@
-package dk.es.br.vies;
+package com.cloudesire.vies_client;
 
 import eu.europa.ec.taxud.vies.services.checkvat.CheckVatPortType;
 import eu.europa.ec.taxud.vies.services.checkvat.CheckVatService;

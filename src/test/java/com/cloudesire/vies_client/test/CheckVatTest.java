@@ -1,8 +1,8 @@
-package dk.es.br.vies.test;
+package com.cloudesire.vies_client.test;
 
-import dk.es.br.vies.ViesVatRegistration;
-import dk.es.br.vies.ViesVatService;
-import dk.es.br.vies.ViesVatServiceException;
+import com.cloudesire.vies_client.ViesVatService;
+import com.cloudesire.vies_client.ViesVatServiceException;
+import com.cloudesire.vies_client.ViesVatRegistration;
 import org.junit.Before;
 import org.junit.Test;
 

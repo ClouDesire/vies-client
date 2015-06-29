@@ -1,4 +1,4 @@
-package dk.es.br.vies;
+package com.cloudesire.vies_client;
 
 import java.util.Date;
 
