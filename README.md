@@ -17,7 +17,9 @@ Java client of the SOAP API for the European "VAT Information Exchange System" (
 
 ## Gradle
 
+```
 compile 'com.cloudesire:vies-client:0.0.1'
+```
 
 ## Usage
 
