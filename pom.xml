@@ -22,7 +22,7 @@
     </description>
 
     <scm>
-        <connection>scm:git:git://github.com/ClouDesire/vies-client.git</connection>
+        <connection>scm:git:ssh://git@github.com/ClouDesire/vies-client.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/ClouDesire/vies-client.git</developerConnection>
         <url>https://github.com/cloudesire/vies-client/</url>
         <tag>HEAD</tag>
