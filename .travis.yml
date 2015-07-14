@@ -2,7 +2,7 @@ language: java
 after_script: "./deploy.sh"
 cache:
   directories:
-  - $HOME/.m2
+  - "$HOME/.m2"
 branches:
   only:
   - master
