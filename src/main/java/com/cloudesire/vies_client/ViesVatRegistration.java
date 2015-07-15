@@ -1,8 +1,9 @@
 package com.cloudesire.vies_client;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ViesVatRegistration
+public class ViesVatRegistration implements Serializable
 {
 	private String country;
 	private String vatNumber;
