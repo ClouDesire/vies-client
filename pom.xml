@@ -169,7 +169,7 @@
     </distributionManagement>
     <profiles>
       <profile>
-        <id>doclint-java8-disable</id>
+        <id>jdk8-hacks</id>
         <activation>
           <jdk>[1.8,)</jdk>
         </activation>
