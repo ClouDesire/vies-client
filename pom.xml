@@ -49,6 +49,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gpg.skip>true</gpg.skip>
+        <nexus.skip>true</nexus.skip>
     </properties>
 
     <build>
@@ -135,6 +136,7 @@
                 <version>1.6.3</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <skipNexusStagingDeployMojo>${nexus.skip}</skipNexusStagingDeployMojo>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
@@ -177,6 +179,18 @@
             <properties>
                 <javadoc.opts>-Xdoclint:none</javadoc.opts>
                 <wsimport.vmargs>-Djavax.xml.accessExternalSchema=all</wsimport.vmargs>
+            </properties>
+        </profile>
+        <profile>
+            <id>travis</id>
+            <activation>
+                <property>
+                    <name>TRAVIS</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <properties>
+                <nexus.skip>false</nexus.skip>
             </properties>
         </profile>
     </profiles>
