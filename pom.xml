@@ -56,6 +56,11 @@
                 <groupId>org.jvnet.jax-ws-commons</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
                 <version>2.3</version>
+                <configuration>
+                    <vmArgs>
+                        <vmArg>${wsimport.vmargs}</vmArg>
+                    </vmArgs>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -162,6 +167,7 @@
         </activation>
         <properties>
           <javadoc.opts>-Xdoclint:none</javadoc.opts>
+          <wsimport.vmargs>-Djavax.xml.accessExternalSchema=all</wsimport.vmargs>
         </properties>
       </profile>
 </profiles>
