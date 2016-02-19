@@ -5,65 +5,66 @@ import java.util.Date;
 
 public class ViesVatRegistration implements Serializable
 {
-	private String country;
-	private String vatNumber;
-	private Date requestDate;
-	private String name;
-	private String address;
+    private String country;
+    private String vatNumber;
+    private Date requestDate;
+    private String name;
+    private String address;
 
-	public String getCountry ()
-	{
-		return country;
-	}
+    public String getCountry()
+    {
+        return country;
+    }
 
-	public void setCountry ( String country )
-	{
-		this.country = country;
-	}
+    public void setCountry( String country )
+    {
+        this.country = country;
+    }
 
-	public String getVatNumber ()
-	{
-		return vatNumber;
-	}
+    public String getVatNumber()
+    {
+        return vatNumber;
+    }
 
-	public void setVatNumber ( String vatNumber )
-	{
-		this.vatNumber = vatNumber;
-	}
+    public void setVatNumber( String vatNumber )
+    {
+        this.vatNumber = vatNumber;
+    }
 
-	public Date getRequestDate ()
-	{
-		return requestDate;
-	}
+    public Date getRequestDate()
+    {
+        return requestDate;
+    }
 
-	public void setRequestDate ( Date requestDate )
-	{
-		this.requestDate = requestDate;
-	}
+    public void setRequestDate( Date requestDate )
+    {
+        this.requestDate = requestDate;
+    }
 
-	public String getName ()
-	{
-		return name;
-	}
+    public String getName()
+    {
+        return name;
+    }
 
-	public void setName ( String name )
-	{
-		this.name = name;
-	}
+    public void setName( String name )
+    {
+        this.name = name;
+    }
 
-	public String getAddress ()
-	{
-		return address;
-	}
+    public String getAddress()
+    {
+        return address;
+    }
 
-	public void setAddress ( String address )
-	{
-		this.address = address;
-	}
+    public void setAddress( String address )
+    {
+        this.address = address;
+    }
 
-	@Override public String toString ()
-	{
-		return "ViesVatRegistration{" + "country=" + country + ", vatNumber=" + vatNumber + ", requestDate="
-				+ requestDate + ", name=" + name + ", address=" + address + '}';
-	}
+    @Override
+    public String toString()
+    {
+        return "ViesVatRegistration{" + "country=" + country + ", vatNumber=" + vatNumber + ", requestDate="
+                + requestDate + ", name=" + name + ", address=" + address + '}';
+    }
 }
