@@ -35,6 +35,10 @@ public class ViesVatService
 					.getString( "vies.fault." + faultKey );
 			throw new ViesVatServiceException( faultKey, country + "-" + vatNumber + ": " + faultMessage );
 		}
+		catch ( Exception e )
+		{
+			throw new ViesVatServiceException( null, "Check failed with " + e.getMessage(), e );
+		}
 
 		if ( !valid_.value ) return null;
 
